@@ -9,11 +9,11 @@ public class SnakeLadder
                 int position=0;
 		int totalDieRoll=0;
                 System.out.println("Game starting in single player mode");
-                while(position!=100)
+                while(position!=100) //loop will run till position hits to the 100
 		{
 			int dieValue=(int)(Math.floor(Math.random()*10 % 6) + 1);
 			int choice=(int)Math.floor(Math.random()*10 % 3);
-                	switch(choice)
+                	switch(choice) //implementing switch case 
                 	{
                         	case NO_PLAY:
                                 	System.out.println("Player did not move: "+ position);
@@ -24,7 +24,7 @@ public class SnakeLadder
                                 	break;
                         	case SNAKE:
                                 	position=position-dieValue;
-					if(position<0)
+					if(position<0) //if position is less than 0 then position will initialise to 0
 					{
 						position=0;
 					}
@@ -33,13 +33,12 @@ public class SnakeLadder
                         	default:
                                 	System.out.println("Choose valid option");
                                 	break;
-               		 }
-			totalDieRoll++;
-			}
+               		 }//end of switch
+			totalDieRoll++; //incrementing totalDieRoll by each instance
+		}//end of while
 			System.out.println("Total number of die rolls is: "+ totalDieRoll);
-			System.out.println("Player reached at position "+ position + " and won the game");
-                }
-        
-}
+			System.out.println("Player reached at position "+ position + " and won the game"); 
+         }//end of main        
+}//end of class
 
 
