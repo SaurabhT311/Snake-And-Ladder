@@ -7,11 +7,12 @@ public class SnakeLadder
         public static void main(String[] args)
         {
                 int position=0;
+		int totalDieRoll=0;
                 System.out.println("Game starting in single player mode");
                 while(position!=100)
 		{
 			int dieValue=(int)(Math.floor(Math.random()*10 % 6) + 1);
-                	int choice=(int)Math.floor(Math.random()*10 % 3);
+			int choice=(int)Math.floor(Math.random()*10 % 3);
                 	switch(choice)
                 	{
                         	case NO_PLAY:
@@ -33,8 +34,12 @@ public class SnakeLadder
                                 	System.out.println("Choose valid option");
                                 	break;
                		 }
+			totalDieRoll++;
+			}
+			System.out.println("Total number of die rolls is: "+ totalDieRoll);
+			System.out.println("Player reached at position "+ position + " and won the game");
                 }
-        }
+        
 }
 
 
