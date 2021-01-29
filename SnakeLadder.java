@@ -31,7 +31,7 @@ public class SnakeLadder
                                		 break;
                         	default:
                                 	System.out.println("Choose valid option");
-                                	break;
+                                	break; 
                		 }
                 }
         }
