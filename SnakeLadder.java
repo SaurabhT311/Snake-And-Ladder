@@ -1,6 +1,5 @@
 public class SnakeLadder
 {
-	/* package codechef; // don't place package name! */
         static final int NO_PLAY=0;
         static final int LADDER=1;
         static final int SNAKE=2;
